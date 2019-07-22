@@ -13,13 +13,13 @@ const useStyles = makeStyles({
     maxWidth: 345,
   },
   media: {
-    height: 140,
+    height: 500,
   },
 });
 
 export default function MediaCard() {
   const classes = useStyles();
-
+  // console.log(require('../img.jpeg').naturalHeight);
   return (
     <Card className={classes.card}>
       <CardActionArea>
@@ -28,7 +28,7 @@ export default function MediaCard() {
           image={require('../img.jpeg')}
           title="Contemplative Reptile"
         />
-        <CardContent>
+        {/* <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             Lizard
           </Typography>
@@ -36,16 +36,16 @@ export default function MediaCard() {
             Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
             across all continents except Antarctica
           </Typography>
-        </CardContent>
+        </CardContent> */}
       </CardActionArea>
-      <CardActions>
+      {/* <CardActions>
         <Button size="small" color="primary">
           Share
         </Button>
         <Button size="small" color="primary">
           Learn More
         </Button>
-      </CardActions>
+      </CardActions> */}
     </Card>
   );
 }
